@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
-
-
-
+  <title>Componentes Interativos</title>
 </head>
+
 <body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  
+  <div id="container">
+    <div id="topo">
+      <h2 id="texto-topo">Pague de acordo com a sua necessidade</h2>
+    </div>
+    <div id="cartao">
+      <div id="pagePreco">
+        <h3 id="t_pageview">100K Pageviews</h3>
+        <div id="grupo-escolha">
+          <p class="pmensal" id="valor">R$ 16.00</p>
+          <p id="grupo-escolha-mes">/mês</p>
+        </div>
+      </div>
+      <div id="slider-input">
+        <input class="range slider" id="slider"   min="16" max="50" value="50" type="range">
+      </div>
+      <div id="pagamento">
+        <div id="pag_mensal">
+          <p>Pagamento mensal</p>
+        </div>
+       <div id="caixa-btn">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider-button round"></span>
+          </label>
+          </div>
+         
+        <div id="pag_anual">
+          Pagamento anual 25% de desconto
+        </div>
+      </div>
+      <div id="informacao">
+        
+        <img class="icon-check" src="images/icon-check.svg">
+        <p class="info-par">Websites ilimitados</p>
+        <img class="icon-check" src="images/icon-check.svg">
+        <p>100% em segurança dos dados</p>
+        <img class="icon-check" src="images/icon-check.svg">
+        <p>Relatórios por emails</p>
+        <img class="icon-check" src="images/icon-check.svg">
+        Comece uma avaliação
+        <div style="float: right;" >
+          <a href="#" class="mBtn">Avalie gratuitamente</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Rafael</a>
+    </div>
   </div>
+  <script src="js/index.js"></script>
 </body>
+
 </html>

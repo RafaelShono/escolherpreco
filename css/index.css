@@ -1,0 +1,497 @@
+body {
+
+  background-image : url('../images/bg-pattern.svg');
+  background-repeat: no-repeat;
+  width            : 1440px;
+  background-color : hsl(230, 100%, 99%);
+
+}
+
+#container {
+  border-radius   : 25px 25px 25px 25px;
+  margin-top      : 10%;
+  margin-left     : 30%;
+  width           : 600px;
+  height          : 500px;
+  background-color: hsl(0, 0%, 100%);
+  padding         : 50px;
+  box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#t_pageview {
+  color      : hsl(227, 35%, 25%);
+  margin-left: 10px;
+  margin-top : 60px;
+  font-family: 'Manrope', sans-serif;
+  font-size  : 20px;
+  font-weight: 300;
+  display:flex;
+  
+
+}
+
+.attribution {
+  position: absolute;
+  bottom  : 0px;
+}
+
+#pagePreco {
+  display       : flex;
+  flex-direction: row;
+  gap           : 100px;
+}
+
+.pmensal {
+  font-family: 'Manrope', sans-serif;
+  font-size  : 40px;
+  font-weight: 800;
+}
+
+#pag_mensal {
+  display       : flex;
+  flex-direction: row;
+}
+
+#pag_anual {
+  float: right;
+}
+
+#grupo-escolha {
+  display       : flex;
+  flex-direction: row;
+  margin-left: 150px;
+}
+
+#informacao {
+  margin-top: 50px;
+}
+
+.icon-check {
+  width       : 15px;
+  float       : left;
+  margin-right: 5px;
+}
+
+#pagamento {
+  margin        : 10px;
+  display       : flex;
+  flex-direction: row;
+  width:400px;
+}
+
+#pag_anual {
+  margin-left: 100px;
+  margin-top : 15px;
+  margin-right: -150px;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+
+#grupo-escolha-mes {
+
+  font-family: 'Manrope', sans-serif;
+  font-size  : 20px;
+  font-weight: 800;
+  margin-top : 60px;
+  color      : hsl(227, 35%, 25%);
+}
+
+#texto-topo {
+  position: absolute;
+  margin-top:-150px;
+  margin-left:100px;
+}
+
+#rangeValue {
+  position   : relative;
+  display    : block;
+  text-align : center;
+  font-size  : 6em;
+  color      : green;
+  font-weight: 400;
+}
+
+.mBtn {
+  
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:28px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+  font-family: 'Manrope', sans-serif;
+	font-size:16px;
+	padding:25px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.mBtn:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.mBtn:active {
+	position:relative;
+	top:1px;
+}
+
+/* Parte pega na 3wSchools*/
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.range { 
+  -webkit-appearance: none;
+  border-radius     : 15px;
+  overflow          : hidden;
+  box-shadow        : inset 0 0 5px rgba(0, 0, 0, 1);
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+.slider::-moz-range-thumb {
+  width: 55px; /* Set a specific slider handle width */
+  height: 45px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider-button {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+.slider-button:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-button {
+  background-color: #2196F3;
+}
+
+input:focus + .slider-button {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider-button:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider-button.round {
+  border-radius: 34px;
+}
+
+.slider-button.round:before {
+  border-radius: 50%;
+}
+#caixa-btn{
+  margin-top:20px;
+  margin-top: 10px;
+  padding-right: 50px;
+  padding-left: 10px;
+}
+
+/* Usando Media query para versão menor */
+
+
+@media (max-width: 1160px)
+{
+  body {
+
+    background-image : url('../images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    width            : 1440px;
+    background-color : hsl(230, 100%, 99%);
+  
+  }
+  
+  #container {
+    border-radius   : 25px 25px 25px 25px;
+    margin-top      : 10%;
+    margin-left     : 30%;
+    width           : 600px;
+    height          : 500px;
+    background-color: hsl(0, 0%, 100%);
+    padding         : 50px;
+    box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  #t_pageview {
+    color      : hsl(227, 35%, 25%);
+    margin-left: 10px;
+    margin-top : 60px;
+    font-family: 'Manrope', sans-serif;
+    font-size  : 20px;
+    font-weight: 300;
+    display:flex;
+    
+  }
+  
+  .attribution {
+    position: absolute;
+    bottom  : 0px;
+  }
+  
+  #pagePreco {
+    display       : flex;
+    flex-direction: row;
+    gap           : 100px;
+  }
+  
+  .pmensal {
+    font-family: 'Manrope', sans-serif;
+    font-size  : 40px;
+    font-weight: 800;
+  }
+  
+  #pag_mensal {
+    display       : flex;
+    flex-direction: row;
+  }
+  
+  #pag_anual {
+    float: right;
+  }
+  
+  #grupo-escolha {
+    display       : flex;
+    flex-direction: row;
+    margin-left: 150px;
+  }
+  
+  #informacao {
+    margin-top: 50px;
+  }
+  
+  .icon-check {
+    width       : 15px;
+    float       : left;
+    margin-right: 5px;
+  }
+  
+  #pagamento {
+    margin        : 10px;
+    display       : flex;
+    flex-direction: row;
+    width:400px;
+  }
+  
+  #pag_anual {
+    margin-left: 100px;
+    margin-top : 15px;
+    margin-right: -150px;
+  }
+  
+  input:checked+.slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  
+  #grupo-escolha-mes {
+  
+    font-family: 'Manrope', sans-serif;
+    font-size  : 20px;
+    font-weight: 800;
+    margin-top : 60px;
+    color      : hsl(227, 35%, 25%);
+  }
+  
+  #texto-topo {
+    position: absolute;
+    margin-top:-150px;
+    margin-left:100px;
+  }
+  
+  #rangeValue {
+    position   : relative;
+    display    : block;
+    text-align : center;
+    font-size  : 6em;
+    color      : green;
+    font-weight: 400;
+  }
+  
+  .mBtn {
+    
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    background-color:#007dc1;
+    border-radius:28px;
+    border:1px solid #124d77;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size:16px;
+    padding:25px 76px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #154682;
+  }
+  .mBtn:hover {
+    background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    background-color:#0061a7;
+  }
+  .mBtn:active {
+    position:relative;
+    top:1px;
+  }
+  
+  /* Parte pega na 3wSchools*/
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .range { 
+    -webkit-appearance: none;
+    border-radius     : 15px;
+    overflow          : hidden;
+    box-shadow        : inset 0 0 5px rgba(0, 0, 0, 1);
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  .slider::-moz-range-thumb {
+    width: 55px; /* Set a specific slider handle width */
+    height: 45px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider-button {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  
+  }
+  
+  .slider-button:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider-button {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider-button {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider-button:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider-button.round {
+    border-radius: 34px;
+  }
+  
+  .slider-button.round:before {
+    border-radius: 50%;
+  }
+  #caixa-btn{
+    margin-top:20px;
+    margin-top: 10px;
+    padding-right: 50px;
+    padding-left: 10px;
+  }
+  
+}
